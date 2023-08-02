@@ -1,0 +1,6 @@
+	The objective of this project is to identify the classification model that best predicts the forest cover type. 
+	The orginal dataset is covtype.csv. The transformed dataset is Transformed_Data_Full.csv. The reduced transformed dataset used for comparing models is Transformed_Data.csv. 
+	In 01_EDA_Data_Cleaning.ipynb, the original dataset is visualized and relvant variables are transformed, which is save to Transformed_Data.csv. 
+	2700 observations were randomly selected to compare model performance. In the following 4 files, 5-fold Cross-validation performance is performed on all varaibles and a subset of selected variables which obtains accuracy for each model in the file: 02a_ClassificationTree_5fold_CV.ipynb, 02b_RandomForest_5fold_CV.ipynb, 02c_KNNClassifier_5fold_CV.ipynb, 02d_NaiveBayes_5fold_CV.ipynb. 
+	After that, 50% and 80% Prediction Interval were calculated for each Cover Type in the following files: 03a_ClassificationTree_OutOfSample.r, 03b_RandomForest_OutOfSample.r, 03b_RandomForest_OutOfSample.ipynb, 03d_NaiveBayes_OutOfSample.r.
+	Finally, the selected best model, Random Forest, was validated on the orginal dataset which confirms previous conclusion. The validation is in 04_FinalValidation.ipynb. 
